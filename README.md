@@ -31,7 +31,9 @@ npm install
      - `API_KEY`: Your API authentication key
      - `BASE_URL`: The base URL of your API
    - For production:
-     - Set environment variables in GitHub repository settings under "Secrets and variables"
+     - Go to your GitHub repository settings
+     - Navigate to "Settings" → "Secrets and variables" → "Actions"
+     - Add "Repository secrets" for each environment variable
 
 ## Development
 
@@ -61,9 +63,8 @@ npm run deploy
 
 | Variable | Description | Required |
 |----------|-------------|----------|
-| API_KEY | Authentication key for the API (sensitive - set in GitHub UI) | Yes |
-| SITE_URL | Base URL of the API endpoint | Yes |
-
+| API_KEY | Authentication key for the API (sensitive - set as repository secret) | Yes |
+| BASE_URL | Base URL of the API endpoint | Yes |
 
 ## License
 
