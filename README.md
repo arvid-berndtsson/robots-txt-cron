@@ -26,10 +26,12 @@ npm install
 ```
 
 3. Configure environment variables:
-   - Copy `.dev.vars.example` to `.dev.vars`
-   - Fill in the required environment variables:
+   - For local development:
+     - Copy `.dev.vars.example` to `.dev.vars`
      - `API_KEY`: Your API authentication key
-     - `SITE_URL`: The base URL of your API
+     - `BASE_URL`: The base URL of your API
+   - For production:
+     - Set environment variables in GitHub repository settings under "Secrets and variables"
 
 ## Development
 
@@ -57,10 +59,11 @@ npm run deploy
 
 ## Environment Variables
 
-| Variable | Description |
-|----------|-------------|
-| API_KEY | Authentication key for the API |
-| SITE_URL | Base URL of the API endpoint |
+| Variable | Description | Required |
+|----------|-------------|----------|
+| API_KEY | Authentication key for the API (sensitive - set in GitHub UI) | Yes |
+| SITE_URL | Base URL of the API endpoint | Yes |
+
 
 ## License
 

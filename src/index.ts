@@ -1,12 +1,12 @@
 
 export interface Env {
 	API_KEY: string;
-	SITE_URL: string;
+	BASE_URL: string;
 }
 
 export default {
 	async fetch(request, env, ctx): Promise<Response> {
-		const response = await fetch(`${env.SITE_URL}/api/v1/cleanup`, {
+		const response = await fetch(`${env.BASE_URL}/api/v1/cleanup`, {
 			headers: {
 				'X-API-Key': env.API_KEY
 			}
