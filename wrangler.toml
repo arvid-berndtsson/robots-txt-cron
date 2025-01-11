@@ -1,0 +1,11 @@
+#:schema node_modules/wrangler/config-schema.json
+name = "robots-txt-cron"
+main = "src/index.ts"
+compatibility_date = "2025-01-09"
+
+
+[observability]
+enabled = true
+
+[triggers]
+crons = ["0 0 * * *"]  # Run every 24 hours
